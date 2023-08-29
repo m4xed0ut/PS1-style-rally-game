@@ -17,8 +17,8 @@ public class TimeAttack : MonoBehaviour
     public CarController carControl;
 
     private bool countdownFinished = false;
-    private bool raceStarted = false;
-    private bool raceFinished = false;
+    public bool raceStarted = false;
+    public bool raceFinished = false;
     private float elapsedTime = 0f;
 
     void Start()
