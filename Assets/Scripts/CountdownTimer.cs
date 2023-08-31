@@ -42,8 +42,9 @@ public class CountdownTimer : MonoBehaviour
 
     private void UpdateTimerDisplay()
     {
+        int minutes = Mathf.FloorToInt(currentTime / 60);
         int seconds = Mathf.FloorToInt(currentTime % 60);
-        string timerString = string.Format("{00}", seconds);
+        string timerString = string.Format("{0}:{1:00}", minutes, seconds);
         timerText.text = timerString;
         timerText2.text = timerString;
         timerText3.text = timerString;
@@ -55,7 +56,7 @@ public class CountdownTimer : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Checkpoint"))
         {
-            currentTime += addedTime;
+            currentTime = 30;
             UpdateTimerDisplay();
             carControl.handBrakeOn = false;
             Destroy(other.gameObject);
