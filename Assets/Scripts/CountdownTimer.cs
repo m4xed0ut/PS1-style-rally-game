@@ -56,7 +56,7 @@ public class CountdownTimer : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Checkpoint"))
         {
-            currentTime = 30;
+            currentTime = addedTime;
             UpdateTimerDisplay();
             carControl.handBrakeOn = false;
             Destroy(other.gameObject);

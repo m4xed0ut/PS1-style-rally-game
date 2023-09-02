@@ -10,7 +10,10 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Electrofied
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 955b33dd37833aa4ab1a6d30f21f604c, type: 3}
+  - {fileID: 12800000, guid: 5b7805ed94e82104183bc1743e35430f, type: 3}
+  - {fileID: 12800000, guid: 8d8dcac5318a36b418c7e3df332724f2, type: 3}
   customCharacters: 
   fontRenderingMode: 2
   ascentCalculationMode: 1
